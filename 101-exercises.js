@@ -5,8 +5,8 @@ const assert = function(actual, expected, message = "") {
 
     // This compares primitive values and collections. If they differ, throw an error.
     if(JSON.stringify(actual) !== JSON.stringify(expected)) {
-        console.error('[assert] expected:    ' + expected)
-        console.error('[assert] instead got: ' + actual)
+        console.error('[assert] expected:    ' + expected);
+        console.error('[assert] instead got: ' + actual);
         throw Error("Assert failed in " + message);
     }
 };
@@ -30,7 +30,7 @@ function addToDone(message) {
 // Example problem setup: Create a variable named doingJSRightNow and assign it the boolean true.
 // The line below creates the variable named doingJSRightNow and assigns the boolean value true
 // To complete Exercise #0, uncomment the following line of JS
-var doingJSRightNow = true
+var doingJSRightNow = true;
 
 // The lines below will test your answer. If you see an error, then it means that your answer is incorrect or incomplete.
 assert(doingJSRightNow, true, "Exercise 0"); 
@@ -39,14 +39,14 @@ addToDone("Exercise 0 is correct");
 
 //  Exercise 1
 // On the line below, create a variable named onMarsRightNow and assign it the boolean value of false
-var onMarsRightNow = false
+var onMarsRightNow = false;
 assert(onMarsRightNow, false, "Exercise 1");
 addToDone("Exercise 1 is correct.");
 
 // Exercise 2
 // Create a variable named fruits and assign it an array of strings containing the following fruits.
 // mango, banana, guava, kiwi, and strawberry.
-var fruits = ['mango', 'banana', 'guava', 'kiwi', 'strawberry']
+var fruits = ['mango', 'banana', 'guava', 'kiwi', 'strawberry'];
 assert(fruits, ["mango", "banana", "guava", "kiwi", "strawberry"], "Exercise 2");
 addToDone("Exercise 2 is correct.");
 
@@ -60,7 +60,7 @@ addToDone("Exercise 3 is correct.");
 
 // Exercise 4
 // Create a variable named numbers and assign it an array of numbers, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 assert(numbers, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "Exercise 4");
 addToDone("Exercise 4 is correct.");
 
@@ -77,16 +77,16 @@ addToDone("Exercise 5 is correct");
 // Recommend using the built-in JS operation to add to an array.
 vegetables.push('tomato');
 assert(vegetables,["eggplant", "broccoli", "carrot", "cauliflower", "zucchini", "tomato"], "Exercise 6");
-addToDone("Exercise 6 is correct")
+addToDone("Exercise 6 is correct");
 
 
 // Exercise 7
 // Given the array of numbers defined below, reverse the array of numbers that you created above. 
-var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 numbers.reverse();
 
-assert(numbers, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1], "Exercise 7")
-addToDone("Exercise 7 is correct")
+assert(numbers, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1], "Exercise 7");
+addToDone("Exercise 7 is correct");
 
 
 
@@ -94,7 +94,7 @@ addToDone("Exercise 7 is correct")
 // Sort the vegetables in alphabetical order. Recommend finding a way to sort the array with a built-in method
 vegetables.sort();
 assert(vegetables, ['broccoli', 'carrot', 'cauliflower', 'eggplant', 'tomato', 'zucchini'], "Exercise 8")
-addToDone("Exercise 8 is correct.")
+addToDone("Exercise 8 is correct.");
 
 
 
@@ -103,7 +103,7 @@ addToDone("Exercise 8 is correct.")
 fruits.sort();
 fruits.reverse();
 assert(fruits, ['tomato', 'strawberry', 'mango', 'kiwi', 'guava', 'banana'], "Exercise 9")
-addToDone("Exercise 9 is correct.")
+addToDone("Exercise 9 is correct.");
 
 
 // Exercise 10
@@ -112,7 +112,7 @@ addToDone("Exercise 9 is correct.")
 // *hint* the search engine search here would be "how to combine two arrays in JavaScript", for example.
 var fruitsAndVeggies = fruits.concat(vegetables);
 assert(fruitsAndVeggies, ['tomato', 'strawberry', 'mango', 'kiwi', 'guava', 'banana', 'broccoli', 'carrot', 'cauliflower', 'eggplant', 'tomato', 'zucchini'], "Exercise 10")
-addToDone("Exercise 10 is correct")
+addToDone("Exercise 10 is correct");
 
 // This function generates a random number that is both positive and even
 function randomPositiveEvenNumber() {
@@ -155,7 +155,7 @@ function randomNegativeOddNumber() {
 }
 
 // The next 4 lines create variables that hold these generated random numbers
-var positiveEvenNumber = randomPositiveEvenNumber()
+var positiveEvenNumber = randomPositiveEvenNumber();
 var positiveOddNumber = randomPositiveOddNumber();
 var negativeEvenNumber = randomNegativeEvenNumber();
 var negativeOddNumber = randomNegativeOddNumber();
@@ -184,9 +184,9 @@ function plusTwo(x) {
     return x + 2;
 }
 
-assert(plusTwo(3), 5, "3 plus 2 is five")
-assert(plusTwo(-2), 0, "-2 plus 2 is zero")
-assert(plusTwo(0), 2, "zero plus 2 is two")
+assert(plusTwo(3), 5, "3 plus 2 is five");
+assert(plusTwo(-2), 0, "-2 plus 2 is zero");
+assert(plusTwo(0), 2, "zero plus 2 is two");
 
 
 
@@ -729,7 +729,7 @@ addToDone("Exercise 49 is correct.")
 // Exercise 50
 // Write a function definition named first that takes in sequence and returns the first value of that sequence.
 function first(x){
-  var input = typeof(x)
+  var input = typeof(x);
   if (input = "object") {return x[0]}
   else {return x.charAt(0)}
 }
@@ -744,7 +744,7 @@ addToDone("Exercise 50 is correct.")
 // Exercise 51
 // Write a function definition named second that takes in sequence and returns the second value of that sequence.
 function second(x){
-  var input = typeof(x)
+  var input = typeof(x);
   if (input = "object") {return x[1]}
   else {return x.charAt(1)}
 }
@@ -757,7 +757,7 @@ addToDone("Exercise 51 is correct.")
 // Exercise 52
 // Write a function definition named third that takes in sequence and returns the third value of that sequence.
 function third(x){
-  var input = typeof(x)
+  var input = typeof(x);
   if (input = "object") {return x[2]}
   else {return x.charAt(2)}
 }
@@ -770,7 +770,7 @@ addToDone("Exercise 52 is correct.")
 // Exercise 53
 // Write a function definition named forth that takes in sequence and returns the forth value of that sequence.
 function forth(x){
-  var input = typeof(x)
+  var input = typeof(x);
   if (input = "object") {return x[3]}
   else {return x.charAt(3)}
 }
@@ -783,10 +783,11 @@ addToDone("Exercise 53 is correct.")
 // Exercise 54
 // Write a function definition named last that takes in sequence and returns the last value of that sequence.
 function last(x){
-  var input = typeof(x)
-  if (input = "object") {return x[-1]}
-  else {return x.charAt(-1)}
+  var input = typeof(x);
+  if (input = "object") {return x[x.length-1]}
+  else {return x.charAt(x.length-1)}
 }
+
 assert(last("ubuntu"), "u", "Exercise 54");
 assert(last([1, 2, 3, 4]), 4, "Exercise 54");
 assert(last(["JS", "is", "awesome"]), "awesome", "Exercise 54");
@@ -796,6 +797,12 @@ addToDone("Exercise 54 is correct.")
 
 // Exercise 55
 // Write a function definition named secondToLast that takes in sequence and returns the second to last value of that sequence.
+function secondToLast(x){
+    var input = typeof(x);
+    if (input = "object") {return x[x.length-2]}
+    else {return x.charAt(x.length-2)}
+}
+
 
 assert(secondToLast("ubuntu"), "t", "Exercise 55");
 assert(secondToLast([1, 2, 3, 4]), 3, "Exercise 55");
@@ -806,6 +813,11 @@ addToDone("Exercise 55 is correct.")
 
 // Exercise 56
 // Write a function definition named thirdToLast that takes in sequence and returns the third to last value of that sequence.
+function thirdToLast(x){
+    var input = typeof(x);
+    if (input = "object") {return x[x.length-3]}
+    else {return x.charAt(x.length-3)}
+}
 
 assert(thirdToLast("ubuntu"), "n", "Exercise 56");
 assert(thirdToLast([1, 2, 3, 4]), 2, "Exercise 56");
@@ -817,6 +829,14 @@ addToDone("Exercise 56 is correct.")
 // Exercise 57
 // Write a function definition named firstAndSecond that takes in sequence and returns the first and second value of that sequence as an array
 
+function firstAndSecond(x){
+    var bucket = [];
+    var input = typeof(x);
+    if (input = "object") {bucket[0]=x[0];bucket[1]=x[1]}
+    else {bucket[0]=x.charAt(0);bucket[1]=x[1]}
+    return bucket;
+}
+
 assert(firstAndSecond([1, 2, 3, 4]), [1, 2], "Exercise 57");
 assert(firstAndSecond(["JS", "is", "awesome"]), ["JS", "is"], "Exercise 57");
 assert(firstAndSecond(["strawberry", "kiwi", "mango", "guava"]), ["strawberry", "kiwi"], "Exercise 57");
@@ -825,6 +845,14 @@ addToDone("Exercise 57 is correct.")
 
 // Exercise 58
 // Write a function definition named firstAndLast that takes in sequence and returns the first and last value of that sequence as an array
+
+function firstAndLast(x){
+    var bucket = [];
+    var input = typeof(x);
+    if (input = "object") {bucket[0]=x[0];bucket[1]=x[x.length-1]}
+    else {bucket[0]=x.charAt(0);bucket[1]=x[x.length-1]}
+    return bucket;
+}
 
 assert(firstAndLast([1, 2, 3, 4]), [1, 4], "Exercise 58");
 assert(firstAndLast(["JS", "is", "awesome"]), ["JS", "awesome"], "Exercise 58");
@@ -836,6 +864,12 @@ addToDone("Exercise 58 is correct.")
 // Exercise 59
 // Write a function definition named firstToLast that takes in sequence and returns the sequence with the first value moved to the end of the sequence.
 
+function firstToLast(array){
+    var bucket = array;
+    bucket.push(bucket.shift());
+    return bucket;
+}
+
 assert(firstToLast([1, 2, 3, 4]), [2, 3, 4, 1], "Exercise 59");
 assert(firstToLast(["JS", "is", "awesome"]), ["is", "awesome", "JS"], "Exercise 59");
 assert(firstToLast(["strawberry", "kiwi", "mango", "guava"]), ["kiwi", "mango", "guava", "strawberry"], "Exercise 59");
@@ -845,6 +879,11 @@ addToDone("Exercise 59 is correct.")
 
 // Exercise 60
 // Write a function definition named sumAll that takes in sequence of numbers and returns all the numbers added together.
+
+function sumAll(x){
+    return x.reduce(function(a, b) { return a + b; }, 0)
+}
+
 
 assert(sumAll([1, 2, 3, 4]), 10, "Exercise 60");
 assert(sumAll([3, 3, 3]), 9, "Exercise 60");
@@ -856,6 +895,10 @@ addToDone("Exercise 60 is correct.")
 //  Exercise 61
 //  Write a function definition named mean that takes in sequence of numbers and returns the average value
 
+function mean(x){
+    return sumAll(x)/x.length
+}
+
 assert(mean([1, 2, 3, 4]), 2.5, "Exercise 61");
 assert(mean([3, 3, 3]), 3, "Exercise 61");
 assert(mean([1, 5, 6]), 4, "Exercise 61");
@@ -865,6 +908,17 @@ addToDone("Exercise 61 is correct.")
 
 // Exercise 62
 // Write a function definition named median that takes in sequence of numbers and returns the average value
+
+function median(x){
+    var median = 0, numsLen = x.length;
+    x.sort();
+    if (numsLen % 2 === 0) {
+        median = (x[numsLen / 2 - 1] + x[numsLen / 2]) / 2;
+    } else {
+        median = x[(numsLen - 1) / 2];
+    }
+    return median;
+}
 
 assert(median([1, 2, 3, 4, 5]), 3.0, "Exercise 62");
 assert(median([1, 2, 3]), 2.0, "Exercise 62");
@@ -876,6 +930,9 @@ addToDone("Exercise 62 is correct.")
 // Exercise 63
 // Write a function definition named maxMinusMin that takes in an array of numbers and returns the difference of the maximum minus theminimum.
 
+function maxMinusMin(x){
+    return (Math.max.apply(null, x)) - (Math.min.apply(null, x))
+}
 
 assert(maxMinusMin([1, 2, 2, 8, 3, 4]), 7, "Exercise 63");
 assert(maxMinusMin([1, 1, 2, 3, 9]), 8, "Exercise 63");
@@ -885,6 +942,14 @@ addToDone("Exercise 63 is correct.")
 
 // Exercise 64
 // Write a function definition named productOfAll that takes in sequence of numbers and returns the product of multiplying all the numbers together
+
+function productOfAll(x){
+    var bucket = 1;
+        for(i=0; i<x.length; i+=1) {
+            bucket *= x[i]
+        }
+    return bucket
+}
 
 assert(productOfAll([1, 2, 3]), 6, "Exercise 64");
 assert(productOfAll([3, 4, 5]), 60, "Exercise 64");
